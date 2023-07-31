@@ -18,7 +18,7 @@ export default function LoginForm() {
      //print
   return (
     <form onSubmit={handleButton}>
-    <h1>Bienvenue chez nous</h1>
+    <h1>Bienvenue chez nous !</h1>
     <br />
     <h2>Connectez vous</h2>
         <input type='text' value={text} onChange={handleText} placeholder='entrez votre nom'  required />
