@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-export default function LoginPage() {
-
+export default function LoginForm() {
+    //state
     const [text, setText] = useState("")
   
+    //comportements
     const handleButton = (event) => {
       event.preventDefault()
       alert("Bonjour " + text   )
@@ -13,15 +14,15 @@ export default function LoginPage() {
     const handleText = (event) => {
       setText(event.currentTarget.value)
     }
-  return (
-    <div>
 
-    <h1>Bienvenue chez nous</h1>
-    <h2>Connectez vous</h2>
+     //print
+  return (
     <form onSubmit={handleButton}>
+    <h1>Bienvenue chez nous</h1>
+    <br />
+    <h2>Connectez vous</h2>
         <input type='text' value={text} onChange={handleText} placeholder='entrez votre nom'  required />
         <button  >Accedez a votre espace</button>
     </form>
-    </div>
   )
 }
