@@ -1,31 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import LoginPage from './Components/Pages/Login/LoginPage'
 
 function App() {
-  
-
-  const [text, setText] = useState("")
-  
-  const handleButton = (event) => {
-    event.preventDefault()
-    alert("Bonjour " + text   )
-    setText("")
-  }
-
-  const handleText = (event) => {
-    setText(event.currentTarget.value)
-  }
 
   return (
-    <div>
-      <h1>Bienvenue chez nous</h1>
-      <h2>Connectez vous</h2>
-      <form onSubmit={handleButton}>
-        <input type='text' value={text} onChange={handleText} placeholder='entrez votre nom'  required />
-        <button  >Accedez a votre espace</button>
-        </form>
-    </div>
-    
+      <div>
+        <LoginPage />
+      </div>
+
   )
 }
 
