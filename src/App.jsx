@@ -9,7 +9,8 @@ function App() {
       <div>
         <Routes>
           <Route path='/' element={<LoginPage />}/>
-          <Route path='/order' element={<OrderPage />}/>
+          <Route path='/order/:id' element={<OrderPage />}/>
+          {/* <Route path='/*' element={< />}/> */}
         </Routes>
 
         

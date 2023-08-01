@@ -1,13 +1,13 @@
-import { useLocation } from 'react-router-dom';
+
+import { useParams } from 'react-router-dom';
 
 
 export default function OrderPage() {
 
-    const location = useLocation();
-    const text = new URLSearchParams(location.search).get('text');
+    const text = useParams();
   return (
     <div>
-        <h1>Bonjour {text}</h1>
+        <h1>Bonjour {text.id}</h1>
         <button>Deconnexion</button>
     </div>
   )

@@ -10,7 +10,7 @@ export default function LoginForm() {
     //comportements
     const handleButton = (event) => {
       event.preventDefault()
-      navigate("/order/", {  donne : text })
+      navigate(`/order/${text}`)
     }
   
     const handleText = (event) => {
