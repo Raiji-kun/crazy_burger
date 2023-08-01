@@ -10,8 +10,8 @@ function App() {
       <div>
         <Routes>
           <Route path='/' element={<LoginPage />}/>
-          <Route path='/order/:id' element={<OrderPage />}/>
-          <Route path='/*' element={<ErrorPage />}/> 
+          <Route path='/order/:username' element={<OrderPage />}/>
+          <Route path='*' element={<ErrorPage />}/> 
         </Routes>
 
         
