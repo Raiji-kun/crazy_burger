@@ -5,7 +5,6 @@ export default function ErrorPage() {
     <div>
         <h1>ErrorPage</h1>
         <Link to="/"><button>Retourner a la page accueil</button></Link>
-    
     </div>
   )
 }
